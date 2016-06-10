@@ -26,9 +26,9 @@ a {
 	text-decoration: none;
 }
 
-	a:hover {
-		text-decoration: underline;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
 .cAlign {
 	width: 960px;
@@ -150,13 +150,13 @@ a#logo {
 	transition: color 0.2s ease-in-out;
 }
 
-	#nav li a:hover {
-		text-decoration: none;
-		color: #a9adb7;
-	}
+#nav li a:hover {
+	text-decoration: none;
+	color: #a9adb7;
+}
 
-	
-	
+
+
 /***************** Content *****************/
 div.contentSectionDark {
 	background-color: #004444;
@@ -181,11 +181,11 @@ div.contentSection img {
 	width:100%;
 }
 
-	
 
-	
-	
-	
+
+
+
+
 /***************** Footer *****************/
 div#footer {
 	background-color: #004444;
@@ -193,40 +193,55 @@ div#footer {
 	padding: 40px 0 10px 0;
 }	
 
-	div#footer h4 {
-		color: white;
-	}
-	
-	div#footer p {
-		color: #878f9a;
-	}
-	
-	div#footer ul.fullWidthList li {
-		border-bottom: 1px solid #404246;
-	}
+div#footer h4 {
+	color: white;
+}
 
-	div#footer ul.fullWidthList li a {
-		color: #878f9a;
-	}
+div#footer p {
+	color: #878f9a;
+}
 
-	div#footer ul.fullWidthList li p {
-		margin-bottom: 0;
-	}
+div#footer ul.fullWidthList li {
+	border-bottom: 1px solid #404246;
+}
 
-	div#footer ul.fullWidthList li p span {
-		color: white;
-	}
-		div#footer img.myPic {
+div#footer ul.fullWidthList li a {
+	color: #878f9a;
+}
+
+div#footer ul.fullWidthList li p {
+	margin-bottom: 0;
+}
+
+div#footer ul.fullWidthList li p span {
+	color: white;
+}
+div#footer img.myPic {
 	border: 5px solid #002222;
 }
 
+.icons {
+	font-size:2.6em;
+	padding-bottom:.4em;
+}
+.icons li {
+	display:inline;
+	padding-right:.5em;
 
+}
+.icons a {
+	color:#ffffff;
+}
+.icons a:hover{
+	color:#349999;
+	text-decoration: none;
+}
 
 /******Hide ****/
 #hide {
-		
-		//display: none;
-	}	
+
+	display: none;
+}	
 
 /**** Break Points ****/
 @media all and (max-width: 960px){
@@ -252,5 +267,13 @@ div#footer {
 	div.oneHalf {
 		width: 100%;
 
+	}
+	img.contact-img {
+		width:50%;
+	}
+}
+@media all and (max-width: 500px){
+	img.contact-img {
+		width:100%;
 	}
 }
