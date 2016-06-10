@@ -1,0 +1,256 @@
+/***************** General Styles *****************/
+body {
+	font-family: "Droid Sans", Arial, serif;
+	font-size: 1.1em;
+	color: #FFFFFF;
+
+	
+	background-color:#015555;
+}
+
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+	font-family: "Oswald", Arial, serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;	
+}
+
+h1 {font-size: 28px;}
+h2 {font-size: 22px;}
+h3 {font-size: 18px;}
+h4 {font-size: 14px;}
+h5 {font-size: 12px;}
+
+a {
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+.cAlign {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.cFloat {
+	overflow: hidden;
+}
+
+.cBoth {clear: both;}
+
+p {
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+
+div.oneFourth {
+	float: left;
+	width: 22%;
+	margin-right: 3%;
+}
+
+div.oneHalf {
+	float: left;
+	width: 47%;
+	margin-right: 3%;
+}
+
+div.blankSeparator {
+	height: 1px;
+	margin-bottom: 30px;
+	display: block;
+}
+
+a.linkButton {
+	float:right;
+	padding: 10px 15px;
+	color: white;
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.preloader {
+	background: url('../img/preloader.gif') center center no-repeat white;
+	display: block;
+}
+
+
+/***************** Color Information *****************/
+a, div#footer ul.fullWidthList li p a {
+	color: #19b7de;
+}
+
+form#subscribeForm input[type="submit"], form#articleCommentForm input[type="submit"], a.linkButton {
+	background-color: #007777;
+
+	/* Some CSS3 Transitions */
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+
+form#subscribeForm input[type="submit"]:hover, form#articleCommentForm input[type="submit"]:hover, a.linkButton:hover {
+	color: #007777;
+	background-color: #002222;
+	text-decoration: none;
+}
+
+
+
+
+
+/***************** Top Header *****************/
+#topHeader {
+	margin: 40px auto;
+}
+
+a#logo {
+	float: left;
+}
+
+#nav {
+	float: right;
+	margin-top: 40px;
+	position: relative; /* Setting this so that z-index will work */
+	z-index: 10; /* Set z-index to 10 to show the menu over the slider below */
+}
+
+#nav li {
+	position: relative;
+	float: left;
+}
+
+#nav li a {
+	
+	color: #002222;
+	
+	padding: 8px 15px;
+	float: left;
+	
+	font-size: 16px;
+	text-transform: uppercase;
+
+	margin-right: 5px;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+
+	/* Some CSS3 Transitions */
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+
+	#nav li a:hover {
+		text-decoration: none;
+		color: #a9adb7;
+	}
+
+	
+	
+/***************** Content *****************/
+div.contentSectionDark {
+	background-color: #004444;
+	border-top: 1px solid #003333;
+	border-bottom: 1px solid #003333;
+	
+	padding: 20px 0;
+	
+}
+
+div.contentSectionLight {
+	background-color: #015555;
+	
+	
+	padding: 20px 0;
+	
+}
+
+
+div.contentSection img {
+	border: 3px solid #002222;
+	width:100%;
+}
+
+	
+
+	
+	
+	
+/***************** Footer *****************/
+div#footer {
+	background-color: #004444;
+	margin-top: 40px;
+	padding: 40px 0 10px 0;
+}	
+
+	div#footer h4 {
+		color: white;
+	}
+	
+	div#footer p {
+		color: #878f9a;
+	}
+	
+	div#footer ul.fullWidthList li {
+		border-bottom: 1px solid #404246;
+	}
+
+	div#footer ul.fullWidthList li a {
+		color: #878f9a;
+	}
+
+	div#footer ul.fullWidthList li p {
+		margin-bottom: 0;
+	}
+
+	div#footer ul.fullWidthList li p span {
+		color: white;
+	}
+		div#footer img.myPic {
+	border: 5px solid #002222;
+}
+
+
+
+/******Hide ****/
+#hide {
+		
+		//display: none;
+	}	
+
+/**** Break Points ****/
+@media all and (max-width: 960px){
+	
+	.cAlign {
+		width:90%;
+		padding:0 5%;
+	}
+	.cAlign img {
+		width:100%;
+	}
+	.myPic, .name{
+		display: none;
+	}
+
+	p{
+		font-size:1em;
+		
+	}
+	h1{
+		font-size:1.2em;
+	}
+	div.oneHalf {
+		width: 100%;
+
+	}
+}
